@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+#####################################################################
+# file    : dsa_config.xml                                          #
+# purpose : twin-cities assignment app config file                  #
+# author  :                                                         #
+# version : 0.1                                                     #
+# date    : 10 Jan 2018                                             #
+# cities  : Portsmouth & Sydney (City)                              #
+#####################################################################
+
+-->
+
+<dsa_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dsa_config.xsd">
+    <environment>
+    <dev>
+        <base_url>http://localhost/DSA-Twin-Cities/</base_url>
+        <base_path>C:/xampp/htdocs/DSA-Twin-Cities</base_path>
+        <url_end>/</url_end>
+        <my_sql>
+            <server>localhost</server>
+            <db>twin_cities</db>
+            <un>root</un>
+            <pw></pw>
+         </my_sql>
+    </dev>
+
+    <live>
+        <base_url>http:///</base_url>
+        <base_path>//</base_path>
+        <url_end>.php</url_end>
+        <my_sql>
+            <server>server</server>
+            <db>server</db>
+            <un>server</un>
+            <pw>server</pw>
+        </my_sql>
+    </live>
+    </environment>
+
+    <addressing>
+        <get_city>city</get_city>
+        <get_place_of_interest>interest</get_place_of_interest>
+        <images_address>images/</images_address>
+    </addressing>
+
+    <map_api_key>key</map_api_key>
+    <weather_api_key>key</weather_api_key>
+</dsa_config>
